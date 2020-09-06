@@ -1,0 +1,125 @@
+Insumo:
+    nome;
+    tipo;
+    portaria;
+    fator de correção(não obrigatório);
+    fator de equivalência(não obrigatório);
+    DCB;
+    bula;
+    custo do insumo;   
+    margem de lucro desejada;   
+    dosagem mínima;
+    dosagem máxima; 
+    ponto de compra;
+    quantidade atual em estoque;    
+    unidade de medida de armazenamento;
+    (criar outra tabela, talvez ?)
+    fornecedor do insumo;
+    lote (dito pelo fornecedor);
+    validade do lote;
+    sinônimos(multivalorado);
+
+Lote (passível de criação):
+    quantidade;
+    ordem de compra;
+    lote;
+    validade do lote;
+    unidade de armazenamento;
+    insumo;
+    preço;
+
+Fornecedor:
+    razão social;
+    CNPJ;
+    inscrição estadual;
+    telefones de contato(multivalorado);
+    e-mail;
+    nome da pessoa de contato;
+    endereço da pessoa;
+
+Ordem de compra (baixar o estoque após a compra):
+    número da ordem de compra;
+    data da ordem de compra;
+    data prevista de entrega;
+    data de entrega;
+    forma de pagamento;
+    condição de pagamento;
+    fornecedor;
+    insumos*
+
+Cliente:
+    nome;   
+    telefone;
+    e-mail;
+    número da carteira de identidade;
+    orgão expedidor;
+    unidade federativa que fez sua expedição;
+    sexo;
+    data de nascimento;
+    convênio médico(não obrigatório);
+
+Convênios médicos:
+    nome;
+    percentual de desconto;
+    telefone de contato;
+    nome da pessoa do contato do convênio;
+    CNPJ;
+    inscrição estadual;
+    endereço completo;
+    especialidades médicas*;    
+
+Médico:
+    nome;
+    número de registro;
+    telefone;
+    e-mail;
+    endereço completo;
+
+Venda:
+    data da venda;
+    data prevista de entrega;
+    hora prevista de entrega (atual + 6);   
+    cliente;
+    vendedor;
+    fórmula;
+
+Vendedor:
+    nome;
+    endereço;
+    número da carteira de identidade;
+    orgão expedidor;
+    unidade federativa que fez sua expedição;
+    sexo;
+    data de nascimento;
+    data de ingresso na farmácia;
+    data de saída da farmácia;
+
+Fórmula:
+    nome do médico que presceveu;
+    data de prescrição;
+    número de notificação(caso a formulação possua um insumo sob controle especial);
+    dose (char);
+    quantidade base;
+    uso prolongado(boolean);
+    insumos*;
+    quantidade de cada insumo;
+    está entre a dosagem mínima e a dosagem máxima; 
+    quantidade total do insumo a ser utilizado;
+    existe estoque suficiente para sua produção;
+    existe restrição de combinação;
+    unidade de medida;
+
+Insumo que não podem ser associados na mesma fórmula:   
+    insumo;
+    insumo;
+
+
+    
+    
+    
+
+
+
+
+    
+    
