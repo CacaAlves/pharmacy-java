@@ -94,7 +94,6 @@ CREATE TABLE Formula (
     formula_id INT AUTO_INCREMENT,
     data_prescicao DATETIME NOT NULL,
     dose_path VARCHAR(13) NOT NULL,
-    quantidade_base FLOAT NOT NULL,
     uso_prolongado BOOLEAN NOT NULL,
     medico_id INT,
     PRIMARY KEY (formula_id), 
