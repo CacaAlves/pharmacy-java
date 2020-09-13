@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="373.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="escolherInsumosTableView" layoutY="62.0" prefHeight="311.0" prefWidth="705.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="85.0" text="ID" />
+          <TableColumn fx:id="nomeTableColumn" minWidth="0.0" prefWidth="106.0" text="Nome" />
+            <TableColumn fx:id="quantidadeTableColumn" minWidth="0.0" prefWidth="136.0" text="Quantidade" />
+            <TableColumn fx:id="unidadeDeMedidaTableColumn" minWidth="0.0" prefWidth="112.0" text="Unidade de Medida" />
+            <TableColumn fx:id="nroDeNotificacaoTableColumn" minWidth="0.0" prefWidth="164.0" text="Nro de Notificaçao" />
+            <TableColumn fx:id="selecionarTableColumn" minWidth="0.0" prefWidth="100.0" text="Selecionar" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="210.0" layoutY="14.0" prefHeight="41.0" prefWidth="705.0" text="Escolha os insumos:" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -62,7 +62,7 @@ public class MainWindowController extends BaseController implements Initializabl
     }
 
     @FXML
-    void formulasListarActionn(ActionEvent event) {
+    void formulasListarAction(ActionEvent event) {
 
     }
 
@@ -73,7 +73,7 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void fornecedorRegistrarAction(ActionEvent event) {
-
+    	viewFactory.showFornecedorForm();
     }
 
     @FXML
@@ -88,7 +88,7 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void insumoRegistrarAction(ActionEvent event) {
-    	
+    	viewFactory.showInsumoForm();
     }
 
     @FXML
@@ -98,12 +98,12 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void loteEditarAction(ActionEvent event) {
-
+    	viewFactory.showLoteForm();
     }
 
     @FXML
     void loteRegistrarAction(ActionEvent event) {
-
+    	viewFactory.showLoteForm();
     }
 
     @FXML

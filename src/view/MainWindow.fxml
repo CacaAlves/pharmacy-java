@@ -51,7 +51,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#conveniosListarAction" text="Convenios" />
                   <MenuItem mnemonicParsing="false" onAction="#medicosListarAction" text="Medicos" />
                   <MenuItem mnemonicParsing="false" onAction="#insumosListarAction" text="Insumos" />
-                  <MenuItem mnemonicParsing="false" onAction="#formulasListarActionn" text="Formulas" />
+                  <MenuItem mnemonicParsing="false" onAction="#formulasListarAction" text="Formulas" />
                   <MenuItem mnemonicParsing="false" onAction="#fornecedoresListarAction" text="Fornecedores" />
                   <MenuItem mnemonicParsing="false" onAction="#lotesListarAction" text="Lotes" />
                   <MenuItem mnemonicParsing="false" onAction="#ordensDeCompraListarAction" text="Ordens de Compra" />

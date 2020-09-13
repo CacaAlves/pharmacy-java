@@ -38,7 +38,6 @@ CREATE TABLE Fornecedor (
     cnpj VARCHAR(25),
     razao_social VARCHAR(30) NOT NULL,
     inscricao_estadual VARCHAR(25),
-    nome_pessoa_contato VARCHAR(30),
     email VARCHAR(50),
     endereco VARCHAR(30),
     logradouro_tipo VARCHAR(15),
@@ -47,9 +46,10 @@ CREATE TABLE Fornecedor (
     PRIMARY KEY (cnpj)
 );
 
-CREATE TABLE Fornecedor_Telefone (
+CREATE TABLE Fornecedor_Telefone (  
     telefone VARCHAR(18),
     fornecedor_cnpj VARCHAR(25),
+    nome_pessoa_contato VARCHAR(30),
     PRIMARY KEY (telefone, fornecedor_cnpj),
     FOREIGN KEY (fornecedor_cnpj) REFERENCES Fornecedor(cnpj) ON DELETE CASCADE
 );
@@ -80,6 +80,7 @@ CREATE TABLE Lote (
 
 CREATE TABLE Medico (
     medico_id INT AUTO_INCREMENT,
+    nome VARCHAR(30) NOT NULL,
     numero_registro VARCHAR(15) NOT NULL,
     email VARCHAR(50),
     numero_endereco VARCHAR(5),

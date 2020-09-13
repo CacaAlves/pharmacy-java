@@ -14,9 +14,6 @@ import view.ViewFactory;
 
 public class FormulaFormController extends BaseController implements Initializable{
 
-	public FormulaFormController(PharmacyManager pharmacyManager, ViewFactory viewFactory, String fxmlName) {
-		super(pharmacyManager, viewFactory, fxmlName);
-	}
 	@FXML
     private TextField qtdBaseTextField;
 
@@ -27,7 +24,11 @@ public class FormulaFormController extends BaseController implements Initializab
     private TextField medicoIDTextField;
 
     @FXML
-    private DatePicker dataPrescicaoDataPicker;
+    private DatePicker dataPrescicaoDatePicker;
+    
+    public FormulaFormController(PharmacyManager pharmacyManager, ViewFactory viewFactory, String fxmlName) {
+    	super(pharmacyManager, viewFactory, fxmlName);
+    }
 
     @FXML
     void adicionarInsumosBtnOnAction(ActionEvent event) {
@@ -36,12 +37,12 @@ public class FormulaFormController extends BaseController implements Initializab
 
     @FXML
     void escreverDoseBtnOnAction(ActionEvent event) {
-
+    	viewFactory.showEscreverDose();
     }
 
     @FXML
     void listarMedicosBtnOnAction(ActionEvent event) {
-
+    	viewFactory.showMedicosListar();
     }
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
