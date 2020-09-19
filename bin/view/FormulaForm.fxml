@@ -59,7 +59,7 @@
                         <Insets left="15.0" />
                      </HBox.margin>
                   </Label>
-                  <DatePicker fx:id="datePrescicaoDataPicker" />
+                  <DatePicker fx:id="datePrescicaoDatePicker" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="45.0" prefWidth="749.0">
@@ -92,6 +92,28 @@
                      </font>
                   </Label>
                   <Button mnemonicParsing="false" onAction="#adicionarInsumosBtnOnAction" prefHeight="45.0" prefWidth="203.0" text="Escolher Insumos">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="749.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="224.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#salvarBtnOnAction" prefHeight="45.0" prefWidth="203.0" text="Salvar">
                      <font>
                         <Font size="18.0" />
                      </font>

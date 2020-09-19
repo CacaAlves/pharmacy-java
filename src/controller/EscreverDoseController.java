@@ -7,13 +7,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.web.HTMLEditor;
+import javafx.stage.Stage;
 import view.PharmacyManager;
 import view.ViewFactory;
 
 public class EscreverDoseController extends BaseController implements Initializable {
 
 	@FXML
-    private HTMLEditor escreverDoseHtmlEditor;
+    private HTMLEditor htmlEditor;
 	
 	public EscreverDoseController(PharmacyManager pharmacyManager, ViewFactory viewFactory, String fxmlName) {
 		super(pharmacyManager, viewFactory, fxmlName);
@@ -21,7 +22,8 @@ public class EscreverDoseController extends BaseController implements Initializa
 	
 	@FXML
     void salvarBtnOnAction(ActionEvent event) {
-
+		Stage stage = (Stage) htmlEditor.getScene().getWindow();
+		viewFactory.closeStage(stage);
     }
 	
 	@Override

@@ -13,7 +13,7 @@ import view.ViewFactory;
 public class AdicionarTelefoneFornecedorController extends BaseController implements Initializable {
 
 	@FXML
-    private TextField telefoneTextFIeld;
+    private TextField telefoneTextField;
 
     @FXML
     private TextField nomeDoContatoTextField;

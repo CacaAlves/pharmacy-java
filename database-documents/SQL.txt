@@ -56,8 +56,8 @@ CREATE TABLE Fornecedor_Telefone (
 
 CREATE TABLE Ordem_Compra (
     numero_ordem_compra INT AUTO_INCREMENT,
-    data_compra DATETIME,
-    data_entrega DATETIME,
+    data_compra DATE,
+    data_entrega DATE,
     condicao_pagamento VARCHAR(25),
     fornecedor_cnpj VARCHAR(25),
     PRIMARY KEY (numero_ordem_compra),
@@ -114,6 +114,7 @@ CREATE TABLE Formula_Insumo (
 
 CREATE TABLE Vendedor (
     numero_rg VARCHAR(15),
+    nome VARCHAR(30) NOT NULL,
     orgao_expedidor VARCHAR(9) NOT NULL,
     unidade_federativa_expedidora VARCHAR(2) NOT NULL,
     sexo VARCHAR(9) NOT NULL,
@@ -139,13 +140,6 @@ CREATE TABLE Convenio_Medico(
     logradouro_tipo VARCHAR(15),
     endereco VARCHAR(30),
     PRIMARY KEY (cnpj)
-);
-
-CREATE TABLE Especialidade_Medica(
-    convenio_cnpj VARCHAR(25),
-    especialidade_medica VARCHAR(25),
-    PRIMARY KEY (convenio_cnpj, especialidade_medica),
-    FOREIGN KEY (convenio_cnpj) REFERENCES Convenio_Medico(cnpj) ON DELETE CASCADE
 );
 
 CREATE TABLE Cliente (
@@ -182,11 +176,20 @@ CREATE TABLE Venda_Formula (
 );
 
 DELIMITER $
-    CREATE TRIGGER Date_Automatica BEFORE INSERT
+    CREATE TRIGGER Ordem_Compra_Date_Automatica BEFORE INSERT
     ON Ordem_Compra
     FOR EACH ROW
     BEGIN
         SET NEW.data_compra = NOW();
+    END$
+DELIMITER ;
+
+DELIMITER $
+    CREATE TRIGGER Venda_Date_Automatica BEFORE INSERT
+    ON Venda
+    FOR EACH ROW
+    BEGIN
+        SET NEW.data_venda = NOW();
     END$
 DELIMITER ;
 

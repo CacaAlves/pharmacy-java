@@ -1,6 +1,8 @@
 package controller;
 
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
@@ -49,9 +51,21 @@ public class InsumoFormController extends BaseController implements Initializabl
     @FXML
     private TextField pontoDeCompTextField;
 
+    List<String> sinonimos = new ArrayList<String>();
+        
     @FXML
-    void EscreverBulaBtnOnAction(ActionEvent event) {
-
+    void escreverBulaBtnOnAction(ActionEvent event) {
+    	viewFactory.showEscreverBula();
+    }
+    
+    @FXML
+    void adicionarSinonimoBtnOnAction(ActionEvent event) {
+    	viewFactory.showAdicionarSinonimo(this.sinonimos);
+    }
+    
+    @FXML
+    void salvarBtnOnAction(ActionEvent event) {
+    	
     }
 
 

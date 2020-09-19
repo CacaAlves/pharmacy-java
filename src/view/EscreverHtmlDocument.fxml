@@ -21,6 +21,6 @@
             </Button>
          </children>
       </HBox>
-      <HTMLEditor fx:id="escreverDoseHtmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="-1.0" prefHeight="373.0" prefWidth="652.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0" />
+      <HTMLEditor fx:id="htmlEditor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="-1.0" prefHeight="373.0" prefWidth="652.0" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0" />
    </children>
 </AnchorPane>

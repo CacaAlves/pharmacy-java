@@ -25,7 +25,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="ClienteRGTextField" prefHeight="26.0" prefWidth="504.0">
+                  <TextField fx:id="clienteRGTextField" prefHeight="26.0" prefWidth="504.0">
                      <HBox.margin>
                         <Insets left="35.0" />
                      </HBox.margin>
@@ -42,7 +42,7 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="VendedorRGTextField" prefHeight="26.0" prefWidth="504.0">
+                  <TextField fx:id="vendedorRGTextField" prefHeight="26.0" prefWidth="504.0">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
@@ -60,13 +60,31 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" onAction="#AdicionarFormulaBtnOnAction" prefHeight="44.0" prefWidth="163.0" text="Adicionar Formula" />
+                  <Button mnemonicParsing="false" onAction="#adicionarFormulaBtnOnAction" prefHeight="44.0" prefWidth="163.0" text="Adicionar Formula" />
                   <Label prefHeight="30.0" prefWidth="207.0">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Label>
                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="749.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#salvarBtnOnAction" prefHeight="44.0" prefWidth="163.0" text="Salvar" />
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
             </HBox>
          </children>
       </VBox>

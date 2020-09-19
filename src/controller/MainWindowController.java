@@ -23,22 +23,17 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void aboutHelpAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void clienteEditarAction(ActionEvent event) {
-
+    	viewFactory.showAbout();
     }
 
     @FXML
     void clienteRegistrarAction(ActionEvent event) {
     	viewFactory.showClientForm();
     }
-
+    
     @FXML
-    void convenioEditarAction(ActionEvent event) {
-
+    void clientesListarAction(ActionEvent event) {
+    	viewFactory.showClientesListar();
     }
 
     @FXML
@@ -48,28 +43,13 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void conveniosListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void formulaEditarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void formulaRegistrarAction(ActionEvent event) {
-    	viewFactory.showFormulaForm();
+    	viewFactory.showConveniosListar();
     }
 
     @FXML
     void formulasListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void fornecedorEditarAction(ActionEvent event) {
-
-    }
+    	viewFactory.showFormulasListar();
+    }	
 
     @FXML
     void fornecedorRegistrarAction(ActionEvent event) {
@@ -78,12 +58,7 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void fornecedoresListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void insumoEditarAction(ActionEvent event) {
-
+    	viewFactory.showFornecedoresListar();
     }
 
     @FXML
@@ -93,12 +68,7 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void insumosListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void loteEditarAction(ActionEvent event) {
-    	viewFactory.showLoteForm();
+    	viewFactory.showInsumosListar();
     }
 
     @FXML
@@ -108,41 +78,26 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void lotesListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void medicoEditarAction(ActionEvent event) {
-
+    	viewFactory.showLotesListar();
     }
 
     @FXML
     void medicoRegistrarAction(ActionEvent event) {
-
+    	viewFactory.showMedicoForm();
     }
 
     @FXML
     void medicosListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void ordemDeCompraEditarAction(ActionEvent event) {
-
+    	viewFactory.showMedicosListar();
     }
 
     @FXML
     void ordemDeCompraRegistrarAction(ActionEvent event) {
-
+    	viewFactory.showOrdemDeCompraForm();
     }
 
     @FXML
     void ordensDeCompraListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void vendaEditarAction(ActionEvent event) {
 
     }
 
@@ -153,17 +108,12 @@ public class MainWindowController extends BaseController implements Initializabl
 
     @FXML
     void vendasListarAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void vendedorEditarAction(ActionEvent event) {
-
+    	viewFactory.showVendasListar();
     }
 
     @FXML
     void vendedorRegistrarAction(ActionEvent event) {
-
+    	viewFactory.showVendedorForm();
     }
 
     @FXML

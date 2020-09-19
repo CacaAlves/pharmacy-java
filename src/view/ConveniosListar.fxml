@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="26.0" prefHeight="55.0" prefWidth="764.0" text="Convenios Medicos" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="conveniosMedicosTableView" layoutY="88.0" prefHeight="444.0" prefWidth="764.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="cnpjTableColumn" prefWidth="72.0" text="CNPJ" />
+          <TableColumn fx:id="nomeTableColumn" prefWidth="51.0" text="Nome" />
+            <TableColumn fx:id="telefoneTableColumn" text="Telefone" />
+            <TableColumn fx:id="nomeDoContatoTableColumn" prefWidth="57.0" text="Nome do Contato" />
+            <TableColumn fx:id="inscricaoEstadualTableColumn" prefWidth="62.0" text="Incriçao Estadual" />
+            <TableColumn fx:id="percentualDeDescontoTableColumn" prefWidth="135.0" text="Percentual De Desconto" />
+            <TableColumn fx:id="enderecoTableColumn" prefWidth="71.0" text="Endereço" />
+            <TableColumn fx:id="numeroTableColumn" prefWidth="67.0" text="Numero" />
+            <TableColumn fx:id="logradouroTableColum" minWidth="0.0" prefWidth="88.0" text="Logradouro" />
+            <TableColumn fx:id="cepTableColum" minWidth="0.0" text="CEP" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

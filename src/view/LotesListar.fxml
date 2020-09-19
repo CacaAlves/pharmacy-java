@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="26.0" prefHeight="55.0" prefWidth="764.0" text="Lotes" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="lotesTableView" layoutY="88.0" prefHeight="444.0" prefWidth="764.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="72.0" text="ID" />
+          <TableColumn fx:id="qtdadeTableColumn" prefWidth="113.0" text="Qtdade" />
+            <TableColumn fx:id="unidDeMedidaTableColumn" prefWidth="129.0" text="Unid. de Medida" />
+            <TableColumn fx:id="loteTableColumn" prefWidth="98.0" text="Lote" />
+            <TableColumn fx:id="validadeTableColumn" prefWidth="100.0" text="Validade" />
+            <TableColumn fx:id="custoTableColumn" minWidth="0.0" prefWidth="57.0" text="Custo" />
+            <TableColumn fx:id="insumoIdTableColumn" prefWidth="95.0" text="Insumo ID" />
+            <TableColumn fx:id="nroOrdemDeCompraTableColumn" prefWidth="99.0" text="Nro Ordem de Compra" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

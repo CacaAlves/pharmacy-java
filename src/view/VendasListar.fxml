@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="26.0" prefHeight="55.0" prefWidth="764.0" text="Vendas" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="vendasTableView" layoutY="88.0" prefHeight="444.0" prefWidth="764.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="65.0" text="id" />
+          <TableColumn fx:id="dataDeVendaTableColumn" prefWidth="247.0" text="Data de Venda" />
+            <TableColumn fx:id="clienteRgTableColumn" prefWidth="227.0" text="Cliente RG" />
+            <TableColumn fx:id="vendedorRgTableColumn" prefWidth="223.0" text="Vendedor RG" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

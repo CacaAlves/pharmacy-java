@@ -38,7 +38,7 @@ public class LoteFormController extends BaseController implements Initializable 
 	
 	@FXML
 	void listarInsumosBtnOnAction(ActionEvent event) {
-		viewFactory.showListarInsumos();
+		viewFactory.showInsumosListar();
 	}
 	
 	@FXML

@@ -185,7 +185,57 @@
                         <Font size="24.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" onAction="#EscreverBulaBtnOnAction" prefHeight="45.0" prefWidth="203.0" text="Escrever Bula">
+                  <Button mnemonicParsing="false" onAction="#escreverBulaBtnOnAction" prefHeight="45.0" prefWidth="203.0" text="Escrever Bula">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="749.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#adicionarSinonimoBtnOnAction" prefHeight="45.0" prefWidth="203.0" text="Adicionar Sinonimo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="749.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="207.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#salvarBtnOnAction" prefHeight="45.0" prefWidth="203.0" text="Salvar">
                      <font>
                         <Font size="18.0" />
                      </font>
